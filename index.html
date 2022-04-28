@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+      <title>Portfólio Do Samuel - NDF</title>
+    </head>
+
+    <body>
+
+      <div class="shadow-behind-askC">
+        <div class="ask-container">
+          <h1 id="changeAfter">Hey! Could you tell me your name?</h1>
+            <div class="buttons">
+              <button id="noOption">No!</button>
+              <button id="yesOption">Sure!</button>
+          </div>
+          <form class="form-askC" onsubmit="return changeText();">
+            <h1 id="askText">Almost there...</h1>
+            <input id="userName" type="text" required placeholder="text here...">
+            <button type="submit" class="submitButton">Send!</button>
+          </form>
+        </div>
+      </div>
+
+
+      <nav class="nav">
+        <ul class="ul__list">
+          <li>
+            <a href="#introSection" class="nav__link active-link">
+              <i class="ri-home-line"></i>
+              <!-- <span class="nav__name">Intro</span> -->
+            </a>
+          </li>
+          <li>
+            <a href="#aboutSection" class="nav__link">
+              <i class="ri-user-line"></i>
+              <!-- <span class="nav__name">About</span> -->
+            </a>
+          </li>
+          <li><a href="#projectsSection" class="nav__link">
+            <i class="ri-information-line"></i>
+            <!-- <span class="nav__name">Projects</span> -->
+          </a></li>
+        </ul>
+      </nav>
+
+    <main>
+      <section class="introSection inicio-container" id="introSection">
+        <div class="holdText">
+          <h1 id="mainH1" class="titleWillChange">Hello...?<span class="ic-style" id="titleName"></span></h1>
+          <p>Welcome to my portfolio. En passant, my name is <span class="ic-span">Samuel</span>.</p>
+          <p>Feel free to explore by clicking on the icons below or by scrolling.</p>
+        </div>
+        <i class="ri-arrow-down-line"></i>
+      </section>
+
+      <section class="inicio-container" id="aboutSection">
+        <div class="holdText">
+          <h1 class="ic-style">Who am i?</h1>
+          <p>I am a stripling that loves programming lenguages, specifically front-end ones
+          <span class="ic-style">(HTML, CSS, Javascript)</span>. I've already programmed in C++ (Nothing advanced).</p>
+          <a href="#">KNOW MORE</a>
+        </div>
+      </section>
+
+      <section class="inicio-container" id="projectsSection">
+        <div class="holdText">
+          <h1 class="ic-style">Recent project</h1>
+          <p>Mins - An italian pizzeria.<br>My first <span class="ic-style">UI Design project</span>.</p>
+          <a id="seeMore" href="#">SEE MORE</a>
+        </div>
+
+          <a class="link-container" style="background-color: #222; padding: 0;" href="#">
+            <div class="imgs-projects">
+              <img class="animaPhoto" src="img/A-inicio-mins.png">
+              <img class="second-img-item-animation-hover" src="img/B-menu-mins.png">
+              <img class="second-img-item-animation-hover" src="img/C-pizza-menu.png">
+              <img class="second-img-item-animation-hover" src="img/D-pizza-menu-second-option.png">
+              <img class="second-img-item-animation-hover" src="img/E-drink-menu.png">
+              <img class="second-img-item-animation-hover" src="img/F-drink-menu-second-option.png">
+              <img class="second-img-item-animation-hover" src="img/G-desserts-menu.png">
+              <img class="second-img-item-animation-hover" src="img/H-desserts-menu-second-option.png">
+            </div>
+          </a>
+      </section>
+      <script src="mainJS/main.js"></script>
+    </body>
+</html>
